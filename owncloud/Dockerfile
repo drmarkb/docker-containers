@@ -15,7 +15,7 @@ RUN add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates 
 RUN apt-get update -q
 
 # Install Dependencies
-RUN apt-get install -qy  wget nginx php5-common php5-cli php5-fpm openssl
+RUN apt-get install -qy  wget nginx php5-common php5-cli php5-fpm openssl smbclient
 
 # Use baseimage-docker's init system
 CMD ["/sbin/my_init"]
